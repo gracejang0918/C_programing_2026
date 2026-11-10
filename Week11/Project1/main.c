@@ -14,13 +14,13 @@ int main() {
 	printf("result : ");
 
 	for (char* p = str; *p != '\0'; p++) {
-		if (*p >= 'A' && *p <= 'Z') {
+		if (*p >= 'a' && *p <= 'z') {
 			printf("%c", *p);
 			count++;
 			continue;
 		}
 		else if (*p != ' ') {
-			*p -= 32;
+			*p += 32;
 			printf("%c", *p);
 			count++;
 		}
